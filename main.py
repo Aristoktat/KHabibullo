@@ -6,7 +6,7 @@ from aiohttp import web
 
 # YANGILANGAN MA'LUMOTLAR
 API_TOKEN = '6092087398:AAGZw3TVrL3-lhDMrGgTGzSquW1_kj3AaqY'
-ADMIN_ID = 689757167 
+ ADMINS = [689757167, 8318430634]
 CHANNELS = [-1003537169311] # Islomiy kinolar kanali IDsi
 
 bot = Bot(token=API_TOKEN, parse_mode="HTML")
@@ -95,3 +95,4 @@ async def search(message: types.Message):
 
 if __name__ == '__main__':
     executor.start_polling(dp, on_startup=on_startup, skip_updates=True)
+
